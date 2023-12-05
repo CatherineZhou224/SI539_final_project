@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catherine Zhou Portfolio</title>
+    <link rel="icon" href="../favicon_io/favicon.ico" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <script
+      src="https://kit.fontawesome.com/07971a4831.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header id="header">
+      <nav class="container">
+        <h1>Catherine <span>Zhou</span></h1>
+        <ul id="sidemenu">
+          <!-- <li class="dropdown">
+            <div class="select">
+              <a class="selected" href="index.html">Home</a>
+            </div>
+          </li>
+          <li class="dropdown1" onclick="opendropdown1()">
+            <div class="select">
+              <span class="selected">UX/UI</span>
+              <div class="caret"></div>
+            </div>
+            <ul class="menu1">
+              <li><a href="#">HomeHarbor</a></li>
+              <li><a href="#">NADA</a></li>
+            </ul>
+          </li>
+          <li class="dropdown2" onclick="opendropdown2()">
+            <div class="select">
+              <span class="selected">Graphic</span>
+              <div class="caret"></div>
+            </div>
+            <ul class="menu2">
+              <li><a href="#">Koi Logo</a></li>
+              <li><a href="#">Infographic</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <div class="select">
+              <a class="selected" href="about.html">About</a>
+            </div>
+          </li> -->
+
+          <li><a href="index.html" class="current">Home</a></li>
+          <li>
+            <div class="box toggle1" onclick="opendropdown1()">
+              <a href="#">UX/UI</a>
+              <div class="caret1"></div>
+            </div>
+            <div id="dropdown1">
+              <ul>
+                <li><a href="homeharbor.html">HomeHarbor</a></li>
+                <li><a href="nada.html">NADA</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="box toggle2" onclick="opendropdown2()">
+              <a href="#">Graphic</a>
+              <div class="caret2"></div>
+            </div>
+            <div id="dropdown2">
+              <ul>
+                <li><a href="koifishlogo.html">Koi Fish Logo</a></li>
+                <li><a href="infographic.html">Infographic</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+
+      <div class="header-main">
+        <div class="header-mobile-image">
+          <img src="../images/mobile-image.png" alt="avatar in mobile size" />
+        </div>
+        <div class="header-text">
+          <h1>Catherine <span>Zhou</span></h1>
+          <br />
+          <h2>UX/UI Designer & Web Developer</h2>
+          <br />
+          <p>
+            Creating <span>engaging</span> and <span>user-centric</span>
+            <br />digital experiences
+          </p>
+          <p>
+            Bringing a unique blend of <span>creativity</span> and<br />
+            <span>technical expertise</span>
+          </p>
+        </div>
+        <div class="header-web-image">
+          <img src="../images/avatar.jpg" alt="avatar in web size" />
+          <!-- <img src="../images/piece1.svg" /> -->
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div id="uxui">
+        <div class="container-uxui">
+          <h2 class="sub-title">UX/UI Design</h2>
+          <div class="list">
+            <div class="item">
+              <div class="image-container">
+                <img
+                  src="../images/home-decor.jpg"
+                  alt="home decoration sample"
+                />
+                <div class="layer">
+                  <p>
+                    A home decoration e-commerce application that simplifies the
+                    furniture journey, making buying and selling a breeze.
+                  </p>
+                </div>
+              </div>
+              <h3 class="mobile-subtitle">Home Decor App</h3>
+
+              <div class="image-container">
+                <img src="../images/nada.jpg" alt="nada logo" />
+                <div class="layer">
+                  <p>Not Another Dating App <br />But A Relationship App</p>
+                </div>
+              </div>
+              <h3 class="mobile-subtitle">Dating App</h3>
+            </div>
+            <div class="item web-subtitle">
+              <h3>Home Decor App</h3>
+              <h3>Dating App</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="graphic">
+        <div class="container-graphic">
+          <h2 class="sub-title">Graphic Design</h2>
+          <div class="list">
+            <div class="item">
+              <div class="image-container">
+                <img src="../images/koi.png" alt="koi fish logo" />
+                <div class="layer">
+                  <p>
+                    KOINOIKE is a vibrant and inclusive community that seeks to
+                    create a sense of unity among koi fish enthusiasts.
+                  </p>
+                </div>
+              </div>
+              <h3 class="mobile-subtitle">Koi Fish Logo</h3>
+
+              <div class="image-container">
+                <img src="../images/comingsoon.webp" alt="coming soon" />
+                <div class="layer">
+                  <p></p>
+                </div>
+              </div>
+              <h3 class="mobile-subtitle">Infographic</h3>
+            </div>
+            <div class="item web-subtitle">
+              <h3>Koi Fish Logo</h3>
+              <h3>Infographic</h3>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <br />
+        <div class="back">
+          <a href="#header">Back to Top</a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div>
+        <br />
+        <br />
+        <div class="row">
+          <div class="contact-left">
+            <h2>Catherine Zhou</h2>
+            <p>Inspired Interactive Innovator</p>
+          </div>
+          <div class="contact-middle">
+            <h2>Social</h2>
+            <div class="social-icons">
+              <a href="http://linkedin.com/in/jie-catherine-zhou"
+                ><i class="fa-brands fa-linkedin"></i>a</a
+              >
+              <a href="https://github.com/CatherineZhou224"
+                ><i class="fa-brands fa-github"></i>b</a
+              >
+              <a href=""><i class="fa-brands fa-facebook"></i>c</a>
+              <a href="https://www.instagram.com/catherine_zzhou/"
+                ><i class="fa-brands fa-instagram"></i>d</a
+              >
+            </div>
+          </div>
+          <div class="contact-right">
+            <h2>Contact Me</h2>
+            <p>Tel: +1 (734)277-6404</p>
+            <p>Email: cathzhou@umich.edu</p>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <p class="copyright">Copyright © 2023 Catherine Zhou</p>
+      <br />
+    </footer>
+  </body>
+  <script src="../js/home.js"></script>
+</html>
