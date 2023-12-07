@@ -41,14 +41,8 @@ function closemenu() {
 //   dropdownContent.style.display === "block" ? "none" : "block";
 
 document.addEventListener("DOMContentLoaded", function () {
-  const toggle1 = document.querySelector("#toggle1");
-  const toggle2 = document.querySelector("toggle2");
   const dropdown1 = document.getElementById("dropdown1");
   const dropdown2 = document.getElementById("dropdown2");
-  const caret1 = document.getElementsByClassName("caret1");
-  const caret2 = document.getElementsByClassName("caret2");
-  const caretRotate1 = document.getElementsByClassName("caret-rotate1");
-  const caretRotate2 = document.getElementsByClassName("caret-rotate2");
 
   opendropdown1 = () => {
     if (dropdown1.style.display === "block") {
@@ -64,17 +58,10 @@ document.addEventListener("DOMContentLoaded", function () {
     if (dropdown2.style.display === "block") {
       dropdown2.style.display = "none";
       dropdown1.style.display = "none";
-      // caret1.style.display = "block";
-      // caretRotate1.style.display = "none";
     } else {
       dropdown2.style.display = "block";
       dropdown1.style.display = "none";
     }
-    // else {
-    //   dropdown2.style.display = "none";
-    //   caret2.style.display = "none";
-    //   caretRotate2.style.display = "block";
-    // }
   };
 });
 
@@ -131,3 +118,48 @@ document.addEventListener("DOMContentLoaded", function () {
 //     });
 //   });
 // });
+
+function fadeIn() {
+  var uxui = document.getElementById("uxui");
+  var graphic = document.getElementById("graphic");
+
+  if (uxui) {
+    uxui.style.opacity = "1";
+  }
+  if (graphic) {
+    graphic.style.opacity = "1";
+  }
+}
+
+function handleScroll() {
+  var uxui = document.getElementById("uxui");
+  var graphic = document.getElementById("graphic");
+
+  if (uxui) {
+    var rect = uxui.getBoundingClientRect();
+
+    if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+      fadeIn();
+      window.removeEventListener("scroll", handleScroll);
+    }
+  }
+
+  if (graphic) {
+    var rect = uxui.getBoundingClientRect();
+
+    if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+      fadeIn();
+      window.removeEventListener("scroll", handleScroll);
+    }
+  }
+}
+
+window.addEventListener("scroll", handleScroll);
+
+function flipImage(container) {
+  container.classList.add("flipped");
+}
+
+function unflipImage(container) {
+  container.classList.remove("flipped");
+}
